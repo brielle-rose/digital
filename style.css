@@ -18,20 +18,34 @@ body {
 }
 
 .navbar {
-    width: 95%;
-    height: 80px;
-    margin: 8px auto;
-    background-color: #fffaf5;
-    border-radius: 18px;
+    position: absolute;
+
+    top: 14px;
+    left: 2%;
+    right: 2%;
+
+    height: 100px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 30px;
-    box-sizing: border-box;
-}
+    padding: 10px 30px;
 
+    background-image:
+        linear-gradient(
+            rgba(255, 250, 245, 0.88),
+            rgba(255, 250, 245, 0.88)
+        ),
+        url("photo-1729575846515-5178676b963e.avif");
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 18px;
+
+    z-index: 10;
+}
 .logo {
     width: 105px;
     height: auto;
@@ -79,7 +93,8 @@ body {
             rgba(255, 241, 227, 0.65),
             rgba(255, 241, 227, 0.65)
         ),
-     
+        url(photo-1560801142-cc7133998a71.avif)
+    
 
     background-size: cover;
     background-position: center;
@@ -663,9 +678,9 @@ body {
 
 
 footer {
-    background: #697357;
+    background: #fff3d3;
 
-    color: white;
+    color: #173b2b;
 
     min-height: 150px;
 
@@ -728,9 +743,9 @@ footer {
 
     border-radius: 50%;
 
-    background: #f5e9d9;
+    background: #ffdeb3;
 
-    color: #687357;
+    color: #ffffff;
 
     display: flex;
 
@@ -977,4 +992,29 @@ footer {
 .card h2 {
     margin-top: 0;
     font-size: 23px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.about-text {
+    width: 10%;
+}
+
+.about-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
 }
