@@ -93,7 +93,7 @@ body {
             rgba(255, 241, 227, 0.65),
             rgba(255, 241, 227, 0.65)
         ),
-        url(photo-1560801142-cc7133998a71.avif)
+        url(image.png)
     
 
     background-size: cover;
@@ -443,7 +443,6 @@ body {
 }
 
 
-/* QUOTE */
 
 .quote-box {
     position: relative;
@@ -993,7 +992,12 @@ footer {
     margin-top: 0;
     font-size: 23px;
 }
+.effects-section {
+    margin-top: 10px;
+}
 
+
+ 
 .about-section {
     display: flex;
     flex-direction: row;
@@ -1001,20 +1005,23 @@ footer {
     justify-content: center;
     gap: 25px;
 }
+ 
 
-.about-text {
-    width: 10%;
-}
 
 .about-image {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    height: 410px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 0 18px 18px;
+    display: block;
 }
-
+ 
 .about-image img {
     width: 1000px;
     height: 500px;
     object-fit: cover;
     border-radius: 20px;
 }
+
+
