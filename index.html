@@ -1,162 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Behind The Smiles</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Behind the Smiles</title>
+    <title>Behind the Smiles | Home</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
+        <nav class="navbar">
 
-    <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Behind the Smiles</a>
+            </div>
 
-        <a href="index.html">
-            <img src="download.png" alt="Behind the Smiles logo" class="logo">
-        </a>
+            <button class="menu-toggle" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <div class="nav-links">
-            <a href="index.html" class="active">Home</a>
-            <a href="about.html">About</a>
-            <a href="experiences.html">Experiences</a>
-            <a href="wellbeing.html">Wellbeing</a>
-            <a href="grow.html">Grow</a>
-        </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="wellbeing.html">Wellbeing</a></li>
+                <li><a href="grow.html">Grow</a></li>
+            </ul>
 
-        <button class="menu-btn">☰ &nbsp; Menu</button>
+        </nav>
+    </header>
 
-    </nav>
 
+    <main>
 
-   
+        <section class="hero">
 
-    <section class="hero">
+            <div class="hero-content">
 
-        <div class="hero-text">
+                <p class="small-title">BEHIND THE SMILES</p>
 
-            <h1>
-                Behind<br>
-                the Smiles
-            </h1>
+                <h1>You don't have to please everyone.</h1>
 
-            <p>
-                People pleasing can be silent,<br>
-                but the impact is loud.
-            </p>
+                <p>
+                    A safe space for young people to understand
+                    people-pleasing, recognise their feelings and
+                    learn that saying no is okay.
+                </p>
 
-            <p class="highlight">
-                You matter.
-            </p>
-
-            <div class="buttons">
-                <a href="experiences.html" class="quiz-btn">
-                    Take the Quiz →
-                </a>
-
-                <a href="about.html" class="learn-btn">
+                <a href="about.html" class="button">
                     Learn More
                 </a>
-            </div>
-
-        </div>
-
-    </section>
-
-</body>
-</html>
-
-
-
-    <footer id="contact">
-
-        <div class="footer-quote">
-
-            <p>
-                You deserve<br>
-                care too.
-            </p>
-
-            <span>♡</span>
-
-        </div>
-
-
-        <div class="footer-column">
-
-            <h3>Quick Links</h3>
-
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#quiz">Experiences</a>
-            <a href="#quiz">Grow</a>
-
-        </div>
-
-
-        <div class="footer-column">
-
-            <h3>Support</h3>
-
-            <a href="#support">Resources</a>
-            <a href="#support">Helplines</a>
-            <a href="#">FAQs</a>
-
-        </div>
-
-
-        <div class="footer-column">
-
-            <h3>Info</h3>
-
-            <a href="#">Privacy</a>
-            <a href="#">Terms of Use</a>
-
-        </div>
-
-
-        <div class="footer-column social">
-
-            <h3>Follow Us</h3>
-
-            <div class="social-icons">
-
-                <span></span>
-                <span>♪</span>
-                <span>♧</span>
 
             </div>
 
-        </div>
+       
+
+    
+        
+    </main>
 
 
-        <div class="copyright">
 
-            © 2025 Behind The Smiles. You matter. ♡
+    <footer>
+
+        <p>Behind the Smiles © 2026</p>
+
+        <div class="social-icons">
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
 
         </div>
 
     </footer>
 
+
+    
+    <script>
+
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+
+            navLinks.classList.toggle("show");
+
+        });
+
+    </script>
 
 </body>
 </html>
