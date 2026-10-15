@@ -86,6 +86,10 @@ header {
     color: #d96b49;
 }
  
+
+.nav-links li {
+    list-style: none;
+}
  
 .menu-toggle {
     display: none;
