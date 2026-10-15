@@ -2,71 +2,250 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wellbeing | Behind the Smiles</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Behind the Smiles | Wellbeing</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 
 <body>
 
-    <nav class="navbar">
 
-        <a href="index.html">
-            <img src="download.png" alt="Behind the Smiles logo" class="logo">
-        </a>
+    <header>
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="experiences.html">Experiences</a>
-            <a href="wellbeing.html" class="active">Wellbeing</a>
-            <a href="grow.html">Grow</a>
-        </div>
+        <nav class="navbar">
 
-        <button class="menu-btn">☰ &nbsp; Menu</button>
+            <div class="logo">
+                <a href="index.html">
+                    Behind the Smiles
+                </a>
+            </div>
 
-    </nav>
+
+            <button class="menu-toggle"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experiences.html">
+                        Experiences
+                    </a>
+                </li>
+
+                <li>
+                    <a href="wellbeing.html"
+                        class="active">
+                        Wellbeing
+                    </a>
+                </li>
+
+                <li>
+                    <a href="grow.html">
+                        Grow
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
 
 
     <main class="page">
 
-        <h1>People Pleasing & Wellbeing</h1>
+
+        <section class="page-heading">
+
+            <p class="small-title">
+                WELLBEING
+            </p>
+
+            <h1>
+                Your feelings matter too.
+            </h1>
+
+            <p>
+                Putting everyone else first can affect
+                how you feel.
+            </p>
+
+        </section>
+
+
+
+        <section class="cards">
+
+
+            <div class="card">
+
+                <h2>
+                    Stress
+                </h2>
+
+                <p>
+                    Constantly worrying about what other
+                    people think can become stressful
+                    and overwhelming.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h2>
+                    Feeling Drained
+                </h2>
+
+                <p>
+                    Always saying yes and helping others
+                    can leave you feeling tired when you
+                    haven't made time for yourself.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h2>
+                    Self-Worth
+                </h2>
+
+                <p>
+                    Depending on other people's approval
+                    can make it harder to recognise
+                    your own value.
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h2>
+                    Boundaries
+                </h2>
+
+                <p>
+                    Learning to communicate your needs
+                    can help you create healthier
+                    boundaries.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <section class="support">
+
+            <h2>
+                Need someone to talk to?
+            </h2>
+
+            <p>
+                You don't have to deal with everything
+                by yourself. Talking to someone you trust
+                can be a good first step.
+            </p>
+
+            <a href="https://www.youthline.co.nz/"
+                class="button">
+
+                Visit Youthline
+
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <footer>
 
         <p>
-            Constantly putting other people first can affect
-            how you feel about yourself.
+            Behind the Smiles © 2026
         </p>
 
-        <div class="cards">
 
-            <div class="card">
-                <h2>Stress</h2>
-                <p>
-                    Trying to keep everyone happy can become exhausting.
-                </p>
-            </div>
+        <div class="social-icons">
 
-            <div class="card">
-                <h2>Low confidence</h2>
-                <p>
-                    You may begin to doubt your own choices and feelings.
-                </p>
-            </div>
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-            <div class="card">
-                <h2>Feeling overwhelmed</h2>
-                <p>
-                    Saying yes to too many things can leave you
-                    feeling mentally and emotionally drained.
-                </p>
-            </div>
+            <a href="#" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
 
         </div>
 
-    </main>
+    </footer>
+
+
+
+
+    <script>
+
+        const menuToggle =
+            document.querySelector(".menu-toggle");
+
+        const navLinks =
+            document.querySelector(".nav-links");
+
+
+        menuToggle.addEventListener("click", function () {
+
+            navLinks.classList.toggle("show");
+
+        });
+
+    </script>
+
 
 </body>
 </html>
