@@ -5,139 +5,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Experiences | Behind the Smiles</title>
+    <title>Behind the Smiles | Experiences</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
+    
+    <header>
 
-        <a href="index.html">
-            <img src="download.png" alt="Behind the Smiles logo" class="logo">
-        </a>
+        <nav class="navbar">
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="experiences.html" class="active">Experiences</a>
-            <a href="wellbeing.html">Wellbeing</a>
-            <a href="grow.html">Grow</a>
-        </div>
+            <div class="logo">
+                <a href="index.html">Behind the Smiles</a>
+            </div>
 
-        <button class="menu-btn">☰ &nbsp; Menu</button>
+            <button class="menu-toggle" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-    </nav>
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="experiences.html" class="active">
+                        Experiences
+                    </a>
+                </li>
+
+                <li>
+                    <a href="wellbeing.html">Wellbeing</a>
+                </li>
+
+                <li>
+                    <a href="grow.html">Grow</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
 
 
     <main class="page">
 
-        <h1>Experiences</h1>
+        <section class="page-heading">
 
-        <p>
-            People pleasing can look different for everyone.
-        </p>
+            <p class="small-title">EXPERIENCES</p>
 
-        <div class="cards">
+            <h1>You are not the only one.</h1>
 
-            <div class="card">
-                <h2>Always saying yes</h2>
-                <p>
-                    You agree to things even when you are tired,
-                    busy or don't really want to.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Fear of disappointing people</h2>
-                <p>
-                    You worry that people will be upset with you
-                    if you say no.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Hiding your feelings</h2>
-                <p>
-                    You may hide how you really feel to avoid
-                    creating conflict.
-                </p>
-            </div>
-
-                <section class="relate-section" id="quiz">
-
-
-            <div class="relate-box">
-
-
-                <h2>Do You Relate?</h2>
-
-
-                <p>Tick the ones that feel like you.</p>
-
-
-                <label>
-                    <input type="checkbox">
-                    I struggle saying no
-                </label>
-
-
-                <label>
-                    <input type="checkbox">
-                    I feel uncomfortable disappointing others
-                </label>
-
-
-                <label>
-                    <input type="checkbox">
-                    I overthink too much
-                </label>
-
-
-                <label>
-                    <input type="checkbox">
-                    I put others before myself
-                </label>
-
-
-                <label>
-                    <input type="checkbox">
-                    I feel guilty taking time for me
-                </label>
-
-
-            </div>
-
-                  <div class="quote-box">
-
-
-                <div class="leaf-decoration">🌿</div>
-
-
-                <p class="quote">
-                    “You can’t pour<br>
-                    from an empty cup.”
-                </p>
-
-
-                <p class="quote-small">
-                    Take care of yourself.
-                </p>
-
-
-                <div class="flower">🌸</div>
-
-
-            </div>
-
+            <p>
+                People-pleasing can show up in everyday
+                situations.
+            </p>
 
         </section>
 
 
-        </div>
+        <section class="cards">
+
+
+            <div class="card">
+
+                <h2>With Friends</h2>
+
+                <p>
+                    You might agree with your friends even when
+                    you have a different opinion because you don't
+                    want to feel left out.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>At School</h2>
+
+                <p>
+                    You may take on extra work or responsibilities
+                    because you're worried about letting someone
+                    down.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>With Family</h2>
+
+                <p>
+                    You might hide how you really feel because
+                    you don't want to create conflict or
+                    disappoint someone you love.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>Online</h2>
+
+                <p>
+                    Social media can create pressure to look happy,
+                    fit in and be liked by others.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="quote">
+
+            <p>
+                "You don't have to change who you are
+                to be accepted."
+            </p>
+
+        </section>
 
     </main>
+
+
+    
+    <footer>
+
+        <p>Behind the Smiles © 2026</p>
+
+        <div class="social-icons">
+
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+  
+    <script>
+
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+
+            navLinks.classList.toggle("show");
+
+        });
+
+    </script>
 
 </body>
 </html>
