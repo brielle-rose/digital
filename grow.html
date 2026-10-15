@@ -2,70 +2,330 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Grow | Behind the Smiles</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Behind the Smiles | Grow</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 
 <body>
 
-    <nav class="navbar">
 
-        <a href="index.html">
-            <img src="download.png" alt="Behind the Smiles logo" class="logo">
-        </a>
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="experiences.html">Experiences</a>
-            <a href="wellbeing.html">Wellbeing</a>
-            <a href="grow.html" class="active">Grow</a>
-        </div>
+    <header>
 
-        <button class="menu-btn">☰ &nbsp; Menu</button>
+        <nav class="navbar">
 
-    </nav>
+
+            <div class="logo">
+
+                <a href="index.html">
+                    Behind the Smiles
+                </a>
+
+            </div>
+
+
+
+            <button class="menu-toggle"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <ul class="nav-links">
+
+
+                <li>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="experiences.html">
+                        Experiences
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="wellbeing.html">
+                        Wellbeing
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="grow.html"
+                        class="active">
+
+                        Grow
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+
+        </nav>
+
+    </header>
+
 
 
     <main class="page">
 
-        <h1>Grow</h1>
 
-        <p>
-            Learning to put yourself first doesn't mean
-            you don't care about other people.
-        </p>
+        <section class="page-heading">
 
-        <div class="cards">
 
-            <div class="card">
-                <h2>Learn to say no</h2>
-                <p>
-                    You don't have to say yes to everything.
-                </p>
+            <p class="small-title">
+                GROW
+            </p>
+
+
+            <h1>
+                Choose yourself too.
+            </h1>
+
+
+            <p>
+                Small steps can help you become more
+                confident in who you are.
+            </p>
+
+
+        </section>
+
+
+
+        <section class="growth-list">
+
+
+
+            <div class="growth-item">
+
+
+                <span>
+                    01
+                </span>
+
+
+                <div>
+
+                    <h2>
+                        Learn to say no
+                    </h2>
+
+                    <p>
+                        Saying no does not make you selfish.
+                        You are allowed to protect your
+                        time and energy.
+                    </p>
+
+                </div>
+
+
             </div>
 
-            <div class="card">
-                <h2>Set boundaries</h2>
-                <p>
-                    Your time, energy and feelings matter too.
-                </p>
+
+
+            <div class="growth-item">
+
+
+                <span>
+                    02
+                </span>
+
+
+                <div>
+
+                    <h2>
+                        Set boundaries
+                    </h2>
+
+                    <p>
+                        Be honest about what you are
+                        comfortable with and communicate
+                        your limits.
+                    </p>
+
+                </div>
+
+
             </div>
 
-            <div class="card">
-                <h2>Speak honestly</h2>
-                <p>
-                    Your opinions and feelings deserve to be heard.
-                </p>
+
+
+            <div class="growth-item">
+
+
+                <span>
+                    03
+                </span>
+
+
+                <div>
+
+                    <h2>
+                        Listen to yourself
+                    </h2>
+
+                    <p>
+                        Pay attention to how you feel
+                        instead of automatically putting
+                        everyone else's feelings first.
+                    </p>
+
+                </div>
+
+
             </div>
 
-        </div>
+
+
+            <div class="growth-item">
+
+
+                <span>
+                    04
+                </span>
+
+
+                <div>
+
+                    <h2>
+                        Remember your worth
+                    </h2>
+
+                    <p>
+                        You do not need everyone's approval
+                        to know that you are valuable.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <section class="final-message">
+
+
+            <h2>
+                You are allowed to be yourself.
+            </h2>
+
+
+            <p>
+                Your kindness matters —
+                but so do you.
+            </p>
+
+
+        </section>
+
 
     </main>
 
+
+
+    <footer>
+
+
+        <p>
+            Behind the Smiles © 2026
+        </p>
+
+
+
+        <div class="social-icons">
+
+
+            <a href="#" aria-label="Instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <a href="#" aria-label="TikTok">
+
+                <i class="fa-brands fa-tiktok"></i>
+
+            </a>
+
+
+            <a href="#" aria-label="Facebook">
+
+                <i class="fa-brands fa-facebook"></i>
+
+            </a>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+    <script>
+
+        const menuToggle =
+            document.querySelector(".menu-toggle");
+
+        const navLinks =
+            document.querySelector(".nav-links");
+
+
+        menuToggle.addEventListener("click", function () {
+
+            navLinks.classList.toggle("show");
+
+        });
+
+    </script>
+
+
 </body>
+
 </html>
