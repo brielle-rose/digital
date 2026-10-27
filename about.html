@@ -1,158 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Behind the Smiles | About</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about SafeSpace and why understanding people-pleasing matters.">
+  <title>SafeSpace | About</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <nav class="navbar">
+  <header class="site-header">
+    <a href="index.html" class="logo">Safe<span>Space.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation"
+      aria-expanded="false" aria-controls="main-nav">☰</button>
+    <nav class="nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="experience.html">Experiences</a>
+      <a href="wellbeing.html">Wellbeing</a>
+      <a href="grow.html">Grow</a>
+    </nav>
+  </header>
 
-            <div class="logo">
-                <a href="index.html">Behind the Smiles</a>
-            </div>
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Get to know us</p>
+      <h1>Understanding the person behind the <span>smile.</span></h1>
+      <p>
+        SafeSpace is a place to learn about people-pleasing and the pressure
+        many young people feel to make everyone else happy.
+      </p>
+    </section>
 
-            <button class="menu-toggle" aria-label="Open menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+    <section class="section split-section">
+      <div class="split-content">
+        <p class="eyebrow">Our purpose</p>
+        <h2>Why SafeSpace exists</h2>
+        <p>
+          Many young people feel pressure to fit in, meet expectations,
+          avoid disappointing others, and appear as though everything is okay.
+        </p>
+        <p>
+          Sometimes, this can lead us to hide our feelings or ignore what
+          we need. SafeSpace aims to help young people recognise these
+          patterns and understand that their wellbeing matters, too.
+        </p>
+        <p>
+          This website is educational and supportive. It is not about
+          blaming people for caring, but about finding a healthier balance
+          between caring for others and caring for yourself.
+        </p>
+      </div>
 
-            <ul class="nav-links">
-
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="about.html" class="active">About</a>
-                </li>
-
-                <li>
-                    <a href="experiences.html">Experiences</a>
-                </li>
-
-                <li>
-                    <a href="wellbeing.html">Wellbeing</a>
-                </li>
-
-                <li>
-                    <a href="grow.html">Grow</a>
-                </li>
-
-            </ul>
-
-        </nav>
-    </header>
-
-
-    <main class="page">
-
-        <section class="page-heading">
-
-            <p class="small-title">ABOUT</p>
-
-            <h1>Behind the Smiles</h1>
-
-            <p>
-                Understanding what it means to always put
-                other people first.
-            </p>
-
-        </section>
-
-
-        <section class="about-content">
-
-            <div class="about-text">
-
-                <h2>What is people-pleasing?</h2>
-
-                <p>
-                    People-pleasing is when someone regularly puts
-                    other people's needs, feelings or expectations
-                    before their own.
-                </p>
-
-                <p>
-                    It can look like saying yes when you want to
-                    say no, avoiding conflict, worrying about
-                    disappointing people or changing yourself so
-                    others will accept you.
-                </p>
-
-
-                <h2>Why does it matter?</h2>
-
-                <p>
-                    Caring about other people is a good thing.
-                    However, constantly ignoring your own needs
-                    can become exhausting.
-                </p>
-
-                <p>
-                    Learning about people-pleasing can help young
-                    people recognise their own feelings and
-                    understand that their needs matter too.
-                </p>
-
-            </div>
-
-
-            <div class="about-image">
-
-                <img src="photos/poster.jpg"
-                    alt="Young person smiling">
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <p>Behind the Smiles © 2026</p>
-
-        <div class="social-icons">
-
-            <a href="#" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="#" aria-label="TikTok">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-
-            <a href="#" aria-label="Facebook">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-
+      <div class="visual-panel about-visual">
+        <div class="visual-sun"></div>
+        <div class="visual-message">
+          <span>REMEMBER</span>
+          <h3>You are allowed to take up space.</h3>
+          <p>You don't have to earn your worth.</p>
         </div>
+        <div class="visual-leaf">✿</div>
+      </div>
+    </section>
 
-    </footer>
+    <section class="section soft-section">
+      <div class="section-heading">
+        <p class="eyebrow">Let's understand it</p>
+        <h2>What is people-pleasing?</h2>
+        <p>
+          People-pleasing can involve regularly putting other people's
+          wishes ahead of your own because you want their approval or fear
+          their disappointment.
+        </p>
+      </div>
 
-    <script>
+      <div class="two-column-grid">
+        <article class="info-card">
+          <span class="card-icon">♡</span>
+          <h3>Caring for others</h3>
+          <p>
+            Being kind, helpful, and considerate is a good thing. Healthy
+            relationships allow everyone to share their needs and feelings.
+          </p>
+        </article>
 
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
+        <article class="info-card">
+          <span class="card-icon">↔</span>
+          <h3>Losing yourself in others</h3>
+          <p>
+            It may become a problem when you regularly say yes out of fear,
+            feel responsible for everyone's emotions, or neglect your own needs.
+          </p>
+        </article>
+      </div>
+    </section>
 
-        menuToggle.addEventListener("click", function () {
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Who this is for</p>
+        <h2>A space for young people</h2>
+      </div>
 
-            navLinks.classList.toggle("show");
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="card-icon">◎</span>
+          <h3>Feel understood</h3>
+          <p>Explore common situations without feeling that you are the only one experiencing them.</p>
+        </article>
+        <article class="feature-card">
+          <span class="card-icon">✦</span>
+          <h3>Build awareness</h3>
+          <p>Notice your feelings, understand your habits, and recognise what you need.</p>
+        </article>
+        <article class="feature-card">
+          <span class="card-icon">🌱</span>
+          <h3>Make small changes</h3>
+          <p>Practise boundaries and self-care at a pace that feels right for you.</p>
+        </article>
+      </div>
+    </section>
 
-        });
+    <section class="help-banner">
+      <div>
+        <p class="eyebrow">Keep exploring</p>
+        <h2>Your feelings deserve to be heard.</h2>
+        <p>Learn from experiences and discover ways to take care of yourself.</p>
+      </div>
+      <a href="experience.html" class="btn btn-light">Read experiences</a>
+    </section>
+  </main>
 
-    </script>
+  <footer class="site-footer">
+    <a href="index.html" class="logo footer-logo">Safe<span>Space.</span></a>
+    <p>A gentle reminder that you matter, too.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="wellbeing.html">Wellbeing</a>
+      <a href="grow.html">Grow</a>
+    </div>
+    <p class="copyright">© 2026 SafeSpace. Created to support young people.</p>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".nav");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navigation.classList.toggle("nav-open");
+      menuButton.setAttribute("aria-expanded", isOpen);
+      menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+  </script>
 
 </body>
 </html>
