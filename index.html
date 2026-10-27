@@ -1,108 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Behind the Smiles | Home</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SafeSpace helps young people understand people-pleasing, set healthy boundaries, and put their wellbeing first.">
+  <title>SafeSpace | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-        <nav class="navbar">
+  <header class="site-header">
+    <a href="index.html" class="logo">Safe<span>Space.</span></a>
 
-            <div class="logo">
-                <a href="index.html">Behind the Smiles</a>
-            </div>
+    <button class="menu-toggle" aria-label="Open navigation"
+      aria-expanded="false" aria-controls="main-nav">
+      ☰
+    </button>
 
-            <button class="menu-toggle" aria-label="Open menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+    <nav class="nav" id="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experiences</a>
+      <a href="wellbeing.html">Wellbeing</a>
+      <a href="grow.html">Grow</a>
+    </nav>
+  </header>
 
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experiences.html">Experiences</a></li>
-                <li><a href="wellbeing.html">Wellbeing</a></li>
-                <li><a href="grow.html">Grow</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <p class="small-title">BEHIND THE SMILES</p>
-
-                <h1>You don't have to please everyone.</h1>
-
-                <p>
-                    A safe space for young people to understand
-                    people-pleasing, recognise their feelings and
-                    learn that saying no is okay.
-                </p>
-
-                <a href="about.html" class="button">
-                    Learn More
-                </a>
-
-            </div>
-
-       
-
-    
-        
-    </main>
-
-
-
-    <footer>
-
-        <p>Behind the Smiles © 2026</p>
-
-        <div class="social-icons">
-
-            <a href="#" aria-label="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="#" aria-label="TikTok">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
-
-            <a href="#" aria-label="Facebook">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-content">
+        <p class="eyebrow">A space to understand yourself</p>
+        <h1>You don't have to please everyone to be <span>enough.</span></h1>
+        <p class="hero-text">
+          A safe space for young people to understand people-pleasing,
+          find their voice, and learn that putting yourself first sometimes
+          doesn't make you selfish.
+        </p>
+        <div class="hero-buttons">
+          <a href="about.html" class="btn btn-primary">Discover SafeSpace</a>
+          <a href="grow.html" class="btn btn-outline">Start your journey</a>
         </div>
+      </div>
 
-    </footer>
+      <div class="hero-art" aria-label="Decorative illustration">
+        <div class="art-circle circle-one"></div>
+        <div class="art-circle circle-two"></div>
+        <div class="art-card">
+          <span class="art-sparkle">✳</span>
+          <p class="art-small">A reminder for you</p>
+          <h2>Your worth isn't measured by how much you do for others.</h2>
+          <span class="art-heart">♡</span>
+        </div>
+        <span class="floating-word word-one">You matter.</span>
+        <span class="floating-word word-two">Take a breath.</span>
+      </div>
+    </section>
 
+    <section class="section intro-section">
+      <div class="section-heading">
+        <p class="eyebrow">Let's talk about it</p>
+        <h2>When saying “yes” becomes too much.</h2>
+        <p>
+          Have you ever agreed to something even when you didn't want to?
+          Or worried that saying no might disappoint someone?
+          You're not alone.
+        </p>
+      </div>
 
-    
-    <script>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="card-icon">♡</span>
+          <h3>Always putting others first</h3>
+          <p>You care about people's feelings, sometimes forgetting to check in with your own.</p>
+        </article>
 
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
+        <article class="feature-card">
+          <span class="card-icon">☁</span>
+          <h3>Worrying about what others think</h3>
+          <p>You may feel pressure to fit in, avoid conflict, or keep everyone happy.</p>
+        </article>
 
-        menuToggle.addEventListener("click", function () {
+        <article class="feature-card">
+          <span class="card-icon">✦</span>
+          <h3>Finding your own voice</h3>
+          <p>You can learn to express your needs, set boundaries, and still be a caring person.</p>
+        </article>
+      </div>
+    </section>
 
-            navLinks.classList.toggle("show");
+    <section class="quote-section">
+      <span class="quote-mark">“</span>
+      <blockquote>
+        You can be a good person without being available to everyone, all the time.
+      </blockquote>
+      <p>A little reminder from SafeSpace</p>
+    </section>
 
-        });
+    <section class="section journey-section">
+      <div class="journey-text">
+        <p class="eyebrow">Your journey starts here</p>
+        <h2>You deserve the same kindness you give to everyone else.</h2>
+        <p>
+          Understanding yourself takes time. Explore our stories, learn
+          about wellbeing, and find small ways to build confidence in who
+          you are.
+        </p>
+        <a href="wellbeing.html" class="btn btn-primary">Explore wellbeing</a>
+      </div>
 
-    </script>
+      <div class="journey-note">
+        <span class="note-icon">✿</span>
+        <h3>It's okay to choose yourself.</h3>
+        <p>Your feelings matter. Your needs matter. And your “no” can be a complete sentence.</p>
+      </div>
+    </section>
+
+    <section class="help-banner">
+      <div>
+        <p class="eyebrow">You don't have to do it alone</p>
+        <h2>Sometimes, talking helps.</h2>
+        <p>If things feel overwhelming, reaching out to someone you trust can be a good first step.</p>
+      </div>
+      <a href="wellbeing.html#support" class="btn btn-light">Find support</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="logo footer-logo">Safe<span>Space.</span></a>
+    <p>A gentle reminder that you matter, too.</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="wellbeing.html">Wellbeing</a>
+      <a href="grow.html">Grow</a>
+    </div>
+    <p class="copyright">© 2026 SafeSpace. Created to support young people.</p>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".nav");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navigation.classList.toggle("nav-open");
+      menuButton.setAttribute("aria-expanded", isOpen);
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+      menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+  </script>
 
 </body>
 </html>
