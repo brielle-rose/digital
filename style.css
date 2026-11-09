@@ -75,21 +75,6 @@ a {
 
 
 
-.brand {
-    text-decoration: none;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.brand img {
-    width: 75px;
-    height: 48px;
-    object-fit: contain;
-    display: block;
-}
-
 
 .nav-links {
     display: flex;
