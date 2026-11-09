@@ -63,7 +63,7 @@ a {
     padding: 12px 22px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
     background: rgba(255, 253, 248, 0.78);
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -73,13 +73,31 @@ a {
     box-shadow: var(--shadow);
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
+.brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
 
+.brand img {
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
 
 .nav-links {
     display: flex;
     align-items: center;
     gap: clamp(12px, 2.3vw, 28px);
+    margin-left: auto;
 }
 
 .nav-links a {
